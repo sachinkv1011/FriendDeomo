@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-12 cl-md-12 col-lg-12 col-xl-12 col-xxl">
+                    <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">FRIENDNAME</th>
+                            <th scope="col">FRIENDNICK</th>
+                            <th scope="col">DESCRIB</th>
+                            <th scope="col">VERSION</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of friend">
+                            <th >{{i._id}}</th>
+                            <th >{{i.name}}</th>
+                            <th >{{i.friendName}}</th>
+                            <th >{{i.friendNickName}}</th>
+                            <th >{{i.DescribeYourFriend}}</th>
+                            <th >{{i.__v}}</th>
+                          </tr>
+                        
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
